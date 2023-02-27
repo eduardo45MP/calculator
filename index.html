@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/stylesheet.css">
+    <title>calculator</title>
+</head>
+<body onload="updateDisplay()">
+    <!-- The calculator container -->
+    <div id="calculator">
+        <!-- The display of the calculator -->
+        <div id="display">0</div>
+        
+        <!-- The buttons of the calculator -->
+        <div class="gridin">
+            <!-- Clear the calculator display -->
+            <button class="my-btn" onclick="clearDisplay()">C</button>
+            <!-- Delete the last digit from the calculator display -->
+            <button class="my-btn" onclick="deleteDigit()">CE</button>
+            <!-- Following buttons append symbols to the calculator display -->
+            <button class="my-btn" onclick="appendSymbol('/')">/</button>
+            <button class="my-btn" onclick="appendSymbol('*')">*</button><br>            <button class="my-btn" onclick="appendSymbol('7')">7</button>
+            <button class="my-btn" onclick="appendSymbol('8')">8</button>            
+            <button class="my-btn" onclick="appendSymbol('9')">9</button>            
+            <button class="my-btn" onclick="appendSymbol('-')">-</button><br>
+            <button class="my-btn" onclick="appendSymbol('4')">4</button>
+            <button class="my-btn" onclick="appendSymbol('5')">5</button>
+            <button class="my-btn" onclick="appendSymbol('6')">6</button>
+            <button class="my-btn" onclick="appendSymbol('+')">+</button><br>
+            <button class="my-btn" onclick="appendSymbol('1')">1</button>
+            <button class="my-btn" onclick="appendSymbol('2')">2</button>
+            <button class="my-btn" onclick="appendSymbol('3')">3</button>
+            <button class="my-btn" onclick="appendSymbol('0')">0</button><br>
+            <button class="my-btn" onclick="appendSymbol('.')">.</button>
+            <!-- Calculate the operation on display-->
+            <button class="my-btn" onclick="calculate()">=</button>
+            </div>
+        </div>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
