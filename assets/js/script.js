@@ -2,13 +2,13 @@
 let expression = "";
 
 // clears the display by resetting the expression variable and updating the display
-function clearDisplay() {
+function clearInput() {
   expression = "";
   updateDisplay();
 }
 
 // deletes the last digit from the expression variable and updates the display
-function deleteDigit() {
+function backspace() {
   expression = expression.slice(0, -1);
   updateDisplay();
 }
@@ -28,6 +28,6 @@ function calculate() {
 
 // updates the display with the current expression
 function updateDisplay() {
-  const display = document.getElementById("display");
+  const display = document.querySelector(".rectangle");
   display.innerText = expression;
 }
